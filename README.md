@@ -1,12 +1,13 @@
 SPANISH:
-Bienvenido a mi repositorio de GitHub
-Mi objetivo principal es crear soluciones de software útiles que puedan ayudar a las personas y empresas a resolver problemas cotidianos. Creo que la tecnología debe ser accesible y beneficiosa para todos, y es por eso que me he dedicado a desarrollar aplicaciones y herramientas que sean fáciles de usar, eficientes y de alta calidad.
+## Bienvenido a mi repositorio de GitHub
+### Mi objetivo principal es crear soluciones de software útiles que puedan ayudar a las personas y empresas a resolver problemas cotidianos. 
+_Creo que la tecnología debe ser accesible y beneficiosa para todos, y es por eso que me he dedicado a desarrollar aplicaciones y herramientas que sean fáciles de usar, eficientes y de alta calidad._
 
-En este repositorio encontrarás una variedad de proyectos, desde aplicaciones web y móviles hasta scripts y herramientas de automatización. Cada uno de ellos ha sido diseñado y desarrollado con el objetivo de simplificar tareas, aumentar la productividad y mejorar la experiencia de los usuarios.
+*En este repositorio encontrarás una variedad de proyectos, desde aplicaciones web y móviles hasta scripts y herramientas de automatización. Cada uno de ellos ha sido diseñado y desarrollado con el objetivo de simplificar tareas, aumentar la productividad y mejorar la experiencia de los usuarios.*
 
-Te invito a explorar los diferentes proyectos, a probarlos y a dejarme tu feedback. Estoy abierto a sugerencias y colaboraciones, ya que creo que juntos podemos crear soluciones aún más impactantes.
+_Te invito a explorar los diferentes proyectos, a probarlos y a dejarme tu feedback. Estoy abierto a sugerencias y colaboraciones, ya que creo que juntos podemos crear soluciones aún más impactantes._
 
-¡Gracias por visitar mi repositorio y espero que encuentres algo que te resulte útil!
+_¡Gracias por visitar mi repositorio y espero que encuentres algo que te resulte útil!_
 
 ENGLISH:
 Welcome to my GitHub repository
