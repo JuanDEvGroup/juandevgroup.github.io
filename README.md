@@ -8,7 +8,7 @@ _Creo que la tecnología debe ser accesible y beneficiosa para todos, y es por e
 _Te invito a explorar los diferentes proyectos, a probarlos y a dejarme tu feedback. Estoy abierto a sugerencias y colaboraciones, ya que creo que juntos podemos crear soluciones aún más impactantes._
 
 _¡Gracias por visitar mi repositorio y espero que encuentres algo que te resulte útil!_
-
+###
 ENGLISH:
 # Welcome to my GitHub repository
 ### My main objective is to create useful software solutions that can help people and businesses solve everyday problems.
