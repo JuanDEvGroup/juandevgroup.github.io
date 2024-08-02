@@ -79,6 +79,8 @@
     submitBtn.addEventListener('click', () => {
       const pinValue = `${pin1.value}${pin2.value}${pin3.value}${pin4.value}`;
       if (pinValue === '7272') { // Cambia este valor por el pin que desees
+        localStorage.setItem('id_usuario', '1');
+        localStorage.setItem('nombre_usuario', 'Usuario');
         window.open('https://sites.google.com/view/p-ecosystem/inicio-j', '_blank'); // Cambia esta URL por la que desees
          localStorage.setItem('id_usuario', '1');
         localStorage.setItem('nombre_usuario', 'Usuario');
