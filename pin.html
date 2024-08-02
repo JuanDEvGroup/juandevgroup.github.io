@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pin de 4 números</title>
+  <style>
+    .pin-container {
+      width: 200px;
+      margin: 40px auto;
+      text-align: center;
+    }
+    .pin-input {
+      width: 40px;
+      height: 40px;
+      font-size: 24px;
+      text-align: center;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="pin-container">
+    <h2>Introduce el pin de 4 números</h2>
+    <input type="text" id="pin1" class="pin-input" maxlength="1">
+    <input type="text" id="pin2" class="pin-input" maxlength="1">
+    <input type="text" id="pin3" class="pin-input" maxlength="1">
+    <input type="text" id="pin4" class="pin-input" maxlength="1">
+    <button id="submit-btn">Enviar</button>
+  </div>
+
+  <script>
+    const pin1 = document.getElementById('pin1');
+    const pin2 = document.getElementById('pin2');
+    const pin3 = document.getElementById('pin3');
+    const pin4 = document.getElementById('pin4');
+    const submitBtn = document.getElementById('submit-btn');
+
+    submitBtn.addEventListener('click', () => {
+      const pinValue = `${pin1.value}${pin2.value}${pin3.value}${pin4.value}`;
+      if (pinValue === '1234') { // Cambia este valor por el pin que desees
+        window.open('https://www.tusitio.com', '_blank'); // Cambia esta URL por la que desees
+      } else {
+        alert('Pin incorrecto');
+      }
+    });
+  </script>
+</body>
+</html>
