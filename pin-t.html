@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pin de 4 números</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+    .pin-container {
+      width: 300px;
+      margin: 40px auto;
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .pin-input {
+      width: 40px;
+      height: 40px;
+      font-size: 24px;
+      text-align: center;
+      border: 1px solid #ccc;
+      margin: 10px;
+      border-radius: 5px;
+    }
+    .pin-input:focus {
+      border-color: #aaa;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+    #submit-btn {
+      width: 100%;
+      height: 40px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #submit-btn:hover {
+      background-color: #3e8e41;
+    }
+    .error-msg {
+      color: #f00;
+      font-size: 16px;
+      margin-top: 10px;
+      display: none;
+    }
+    h2 {
+      color: #fff;
+      background-color: #4CAF50;
+      padding: 10px;
+      border-radius: 10px 10px 0 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="pin-container">
+    <h2>Introduce el pin de 4 números</h2>
+    <input type="text" id="pin1" class="pin-input" maxlength="1">
+    <input type="text" id="pin2" class="pin-input" maxlength="1">
+    <input type="text" id="pin3" class="pin-input" maxlength="1">
+    <input type="text" id="pin4" class="pin-input" maxlength="1">
+    <button id="submit-btn">Enviar</button>
+    <div class="error-msg" id="error-msg">Pin incorrecto, inténtalo de nuevo.</div>
+  </div>
+
+  <script>
+    const pin1 = document.getElementById('pin1');
+    const pin2 = document.getElementById('pin2');
+    const pin3 = document.getElementById('pin3');
+    const pin4 = document.getElementById('pin4');
+    const submitBtn = document.getElementById('submit-btn');
+    const errorMSG = document.getElementById('error-msg');
+
+    submitBtn.addEventListener('click', () => {
+      const pinValue = `${pin1.value}${pin2.value}${pin3.value}${pin4.value}`;
+      if (pinValue === '2828') { // Cambia este valor por el pin que desees
+        window.open('https://sites.google.com/view/p-ecosystem/inicio-j', '_blank'); // Cambia esta URL por la que desees
+      } else {
+        errorMSG.style.display = 'block';
+        setTimeout(() => {
+          errorMSG.style.display = 'none';
+        }, 2000);
+      }
+    });
+  </script>
+</body>
+</html>
