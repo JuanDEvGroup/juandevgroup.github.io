@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Generador de Token</title>
+</head>
+<body>
+  <h1>Generador de Token</h1>
+  <button id="generar-token">Generar Token</button>
+  <div id="token"></div>
+
+  <script>
+    const generarToken = () => {
+      const token = Math.random().toString(36).substr(2) + Math.random().toString(36).substr(2);
+      document.getElementById("token").innerHTML = `Token: ${token}`;
+    };
+
+    document.getElementById("generar-token").addEventListener("click", generarToken);
+  </script>
+</body>
+</html>
