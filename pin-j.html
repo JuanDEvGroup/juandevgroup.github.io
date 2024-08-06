@@ -69,18 +69,7 @@
   </div>
 
   <script>
-    const campos = document.querySelectorAll('input[type="text"]');
-
-    campos.forEach((campo, indice) => {
-      campo.addEventListener('input', () => {
-        if (campo.value.length === 1) {
-          const siguienteCampo = campos[indice + 1];
-          if (siguienteCampo) {
-            siguienteCampo.focus();
-          }
-        }
-      });
-    });
+    
     const pin1 = document.getElementById('pin1');
     const pin2 = document.getElementById('pin2');
     const pin3 = document.getElementById('pin3');
@@ -103,6 +92,28 @@
         }, 2000);
       }
     });
+    const pin1 = document.getElementById('pin1');
+const pin2 = document.getElementById('pin2');
+const pin3 = document.getElementById('pin3');
+const pin4 = document.getElementById('pin4');
+
+pin1.addEventListener('input', () => {
+  if (pin1.value.length === 1) {
+    pin2.focus();
+  }
+});
+
+pin2.addEventListener('input', () => {
+  if (pin2.value.length === 1) {
+    pin3.focus();
+  }
+});
+
+pin3.addEventListener('input', () => {
+  if (pin3.value.length === 1) {
+    pin4.focus();
+  }
+});
   </script>
 </body>
 </html>
