@@ -69,29 +69,43 @@
   </div>
 
   <script>
-    const campos = document.querySelectorAll('input[type="text"]');
-
-    campos.forEach((campo, indice) => {
-      campo.addEventListener('input', () => {
-        if (campo.value.length === 1) {
-          const siguienteCampo = campos[indice + 1];
-          if (siguienteCampo) {
-            siguienteCampo.focus();
-          }
-        }
-      });
-    });
-    const pin1 = document.getElementById('pin1');
+  const pin1 = document.getElementById('pin1');
     const pin2 = document.getElementById('pin2');
     const pin3 = document.getElementById('pin3');
     const pin4 = document.getElementById('pin4');
     const submitBtn = document.getElementById('submit-btn');
     const errorMSG = document.getElementById('error-msg');
 
+    pin1.addEventListener('input', () => {
+      if (pin1.value.length === 1) {
+        pin2.focus();
+      }
+    });
+
+    pin2.addEventListener('input', () => {
+      if (pin2.value.length === 1) {
+        pin3.focus();
+      }
+    });
+
+    pin3.addEventListener('input', () => {
+      if (pin3.value.length === 1) {
+        pin4.focus();
+      }
+    });
+
+    pin4.addEventListener('input', () => {
+      if (pin4.value.length === 1) {
+        submitBtn.focus();
+      }
+    });
+
     submitBtn.addEventListener('click', () => {
       const pinValue = `${pin1.value}${pin2.value}${pin3.value}${pin4.value}`;
-      if (pinValue === '2626') { // Cambia este valor por el pin que desees
-        window.open('https://sites.google.com/view/p-ecosystem/78d378t37676634376853453453453465783465466573465783465784658346578uergf----', '_blank'); // Cambia esta URL por la que desees
+      if (pinValue === '7272') { 
+        localStorage.setItem('id_usuario', '1');
+        localStorage.setItem('nombre_usuario', 'Usuario');
+        window.open('https://sites.google.com/view/p-ecosystem/ry743r4yty48tty4t777584ty4y87fhbrgfrgf4747r4y74ry4r47fjvfbjvbjkskyf7e87rf7r', '_blank'); 
       } else {
         errorMSG.style.display = 'block';
         setTimeout(() => {
@@ -99,28 +113,6 @@
         }, 2000);
       }
     });
-    const pin1 = document.getElementById('pin1');
-const pin2 = document.getElementById('pin2');
-const pin3 = document.getElementById('pin3');
-const pin4 = document.getElementById('pin4');
-
-pin1.addEventListener('input', () => {
-  if (pin1.value.length === 1) {
-    pin2.focus();
-  }
-});
-
-pin2.addEventListener('input', () => {
-  if (pin2.value.length === 1) {
-    pin3.focus();
-  }
-});
-
-pin3.addEventListener('input', () => {
-  if (pin3.value.length === 1) {
-    pin4.focus();
-  }
-});
   </script>
 </body>
 </html>
